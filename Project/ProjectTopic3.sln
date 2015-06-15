@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Topic3", "WindowsFormsApplication1\Project_Topic3.csproj", "{B1D70829-B5CF-4C3A-928F-EA64595CC77C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Topic3", "ProjectTopic3\Project_Topic3.csproj", "{B1D70829-B5CF-4C3A-928F-EA64595CC77C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
