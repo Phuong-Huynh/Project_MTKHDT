@@ -19,7 +19,7 @@ namespace Project_Topic3.FormFolder.AdminForms
 
         private void btnAccessClass_Click(object sender, EventArgs e)
         {
-            AbstractForms.BaseForm formAcc = new AdminAccSubject();
+            AbstractForms.BaseForm formAcc = new AdminAccClass();
             formAcc.ShowDialog();
         }
 
@@ -32,6 +32,24 @@ namespace Project_Topic3.FormFolder.AdminForms
         private void btnAccessSubject_Click(object sender, EventArgs e)
         {
             AbstractForms.BaseForm formAcc = new AdminAccSubject();
+            formAcc.ShowDialog();
+        }
+
+        private void btnAccessStudent_Click(object sender, EventArgs e)
+        {
+            AbstractForms.BaseForm formAcc = new AdminAccStudent();
+            formAcc.ShowDialog();
+        }
+
+        private void btnAccessTeacher_Click(object sender, EventArgs e)
+        {
+            AbstractForms.BaseForm formAcc = new AdminAccTeacher();
+            formAcc.ShowDialog();
+        }
+
+        private void btnAccessTimetable_Click(object sender, EventArgs e)
+        {
+            AbstractForms.BaseForm formAcc = new AdminAccTimetable();
             formAcc.ShowDialog();
         }
     }

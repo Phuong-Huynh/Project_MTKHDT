@@ -12,7 +12,7 @@ namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentViewTimetable : AbstractForms.ViewTimetable
     {
-        public StudentViewTimetable() : base() { }
+        public StudentViewTimetable() : base() { InitializeComponent(); }
 
     }
 }

@@ -63,6 +63,7 @@
             this.btnRegisSubj.TabIndex = 15;
             this.btnRegisSubj.Text = "Đăng kí môn học";
             this.btnRegisSubj.UseVisualStyleBackColor = true;
+            this.btnRegisSubj.Click += new System.EventHandler(this.btnRegisSubj_Click);
             // 
             // label4
             // 

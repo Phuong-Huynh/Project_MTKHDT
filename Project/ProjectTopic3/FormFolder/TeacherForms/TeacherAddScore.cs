@@ -12,7 +12,7 @@ namespace Project_Topic3.FormFolder.TeacherForms
 {
     public partial class TeacherAddScore : AbstractForms.BaseForm
     {
-        public TeacherAddScore() : base() { }
+        public TeacherAddScore() : base() { InitializeComponent(); }
 
     }
 }

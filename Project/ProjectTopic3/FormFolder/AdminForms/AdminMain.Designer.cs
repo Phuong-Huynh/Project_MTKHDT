@@ -67,6 +67,7 @@
             this.btnAccessTimetable.TabIndex = 20;
             this.btnAccessTimetable.Text = "Quản lý thời khóa biểu";
             this.btnAccessTimetable.UseVisualStyleBackColor = true;
+            this.btnAccessTimetable.Click += new System.EventHandler(this.btnAccessTimetable_Click);
             // 
             // btnAccessTeacher
             // 
@@ -77,6 +78,7 @@
             this.btnAccessTeacher.TabIndex = 21;
             this.btnAccessTeacher.Text = "Quản lý giáo viên";
             this.btnAccessTeacher.UseVisualStyleBackColor = true;
+            this.btnAccessTeacher.Click += new System.EventHandler(this.btnAccessTeacher_Click);
             // 
             // btnAccessClass
             // 
@@ -98,6 +100,7 @@
             this.btnAccessStudent.TabIndex = 23;
             this.btnAccessStudent.Text = "Quản lý học sinh";
             this.btnAccessStudent.UseVisualStyleBackColor = true;
+            this.btnAccessStudent.Click += new System.EventHandler(this.btnAccessStudent_Click);
             // 
             // btnAccessSubject
             // 

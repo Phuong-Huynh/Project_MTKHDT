@@ -12,6 +12,10 @@ namespace Project_Topic3.FormFolder.AdminForms
 {
     public partial class AdminAccSubject : AbstractForms.AccessObj
     {
-        public AdminAccSubject() : base() {}
+        public AdminAccSubject() : base() { 
+            InitializeComponent();
+            this.lbTitleLayout.Text = "QUẢN LÝ MÔN HỌC";
+            this.lbTittleDataGridview.Text = "Danh sách môn học";
+        }
     }
 }

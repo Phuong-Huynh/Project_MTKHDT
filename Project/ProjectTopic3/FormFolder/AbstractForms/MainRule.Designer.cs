@@ -107,6 +107,7 @@
             this.btnEditInfo.TabIndex = 11;
             this.btnEditInfo.Text = "Cập nhật thông tin";
             this.btnEditInfo.UseVisualStyleBackColor = true;
+            this.btnEditInfo.Click += new System.EventHandler(this.btnEditInfo_Click);
             // 
             // btnViewTimetable
             // 
@@ -117,6 +118,7 @@
             this.btnViewTimetable.TabIndex = 12;
             this.btnViewTimetable.Text = "Xem thời khóa biểu";
             this.btnViewTimetable.UseVisualStyleBackColor = true;
+            this.btnViewTimetable.Click += new System.EventHandler(this.btnViewTimetable_Click);
             // 
             // MainRule
             // 

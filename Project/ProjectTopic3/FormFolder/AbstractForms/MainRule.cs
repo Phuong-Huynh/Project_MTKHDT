@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace Project_Topic3.FormFolder.AbstractForms
 {
-    public partial class MainRule : BaseForm
+    public abstract partial class MainRule : BaseForm
     {
         public MainRule()
         {
             InitializeComponent();
         }
+
+        protected abstract void btnEditInfo_Click(object sender, EventArgs e);
+
+        protected abstract void btnViewTimetable_Click(object sender, EventArgs e);
     }
 }

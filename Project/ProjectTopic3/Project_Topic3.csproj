@@ -68,6 +68,12 @@
     <Compile Include="FormFolder\AbstractForms\ViewTimetable.Designer.cs">
       <DependentUpon>ViewTimetable.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccClass.Designer.cs">
+      <DependentUpon>AdminAccClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFolder\AdminForms\AdminAccStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,18 @@
     </Compile>
     <Compile Include="FormFolder\AdminForms\AdminAccSubject.Designer.cs">
       <DependentUpon>AdminAccSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccTeacher.Designer.cs">
+      <DependentUpon>AdminAccTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccTimetable.Designer.cs">
+      <DependentUpon>AdminAccTimetable.cs</DependentUpon>
     </Compile>
     <Compile Include="FormFolder\AdminForms\AdminRate.cs">
       <SubType>Form</SubType>
@@ -166,8 +184,20 @@
     <EmbeddedResource Include="FormFolder\AbstractForms\ViewTimetable.resx">
       <DependentUpon>ViewTimetable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\AdminForms\AdminAccClass.resx">
+      <DependentUpon>AdminAccClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\AdminForms\AdminAccStudent.resx">
+      <DependentUpon>AdminAccStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFolder\AdminForms\AdminAccSubject.resx">
       <DependentUpon>AdminAccSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\AdminForms\AdminAccTeacher.resx">
+      <DependentUpon>AdminAccTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\AdminForms\AdminAccTimetable.resx">
+      <DependentUpon>AdminAccTimetable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormFolder\AdminForms\AdminRate.resx">
       <DependentUpon>AdminRate.cs</DependentUpon>
