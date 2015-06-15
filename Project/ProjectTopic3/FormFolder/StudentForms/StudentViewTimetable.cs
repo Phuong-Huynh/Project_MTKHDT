@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GiaoDien.FormFolder.StudentForms
+namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentViewTimetable : AbstractForms.ViewTimetable
     {

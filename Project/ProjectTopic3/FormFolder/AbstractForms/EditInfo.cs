@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GiaoDien.FormFolder.AbstractForms
+namespace Project_Topic3.FormFolder.AbstractForms
 {
     public partial class EditInfo : BaseForm
     {

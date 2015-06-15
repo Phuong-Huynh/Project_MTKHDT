@@ -8,13 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GiaoDien.FormFolder.AdminForms
+namespace Project_Topic3.FormFolder.AdminForms
 {
     public partial class AdminMain : AbstractForms.BaseForm
     {
         public AdminMain()
         {
             InitializeComponent();
+        }
+
+        private void btnAccessClass_Click(object sender, EventArgs e)
+        {
+            AbstractForms.BaseForm formAcc = new AdminAccSubject();
+            formAcc.ShowDialog();
+        }
+
+        private void btnRating_Click(object sender, EventArgs e)
+        {
+            AbstractForms.BaseForm formAcc = new AdminRate();
+            formAcc.ShowDialog();
+        }
+
+        private void btnAccessSubject_Click(object sender, EventArgs e)
+        {
+            AbstractForms.BaseForm formAcc = new AdminAccSubject();
+            formAcc.ShowDialog();
         }
     }
 }

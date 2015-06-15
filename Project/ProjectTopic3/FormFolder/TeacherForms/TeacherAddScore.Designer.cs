@@ -1,4 +1,4 @@
-﻿namespace GiaoDien.FormFolder.TeacherForms
+﻿namespace Project_Topic3.FormFolder.TeacherForms
 {
     partial class TeacherAddScore
     {

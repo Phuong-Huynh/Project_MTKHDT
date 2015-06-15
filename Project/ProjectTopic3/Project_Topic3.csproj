@@ -68,6 +68,12 @@
     <Compile Include="FormFolder\AbstractForms\ViewTimetable.Designer.cs">
       <DependentUpon>ViewTimetable.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\AdminForms\AdminAccStudent.Designer.cs">
+      <DependentUpon>AdminAccStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFolder\AdminForms\AdminAccSubject.cs">
       <SubType>Form</SubType>
     </Compile>

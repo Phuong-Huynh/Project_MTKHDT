@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GiaoDien.FormFolder
+namespace Project_Topic3.FormFolder
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace GiaoDien.FormFolder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new AdminForms.AdminMain());
         }
     }
 }

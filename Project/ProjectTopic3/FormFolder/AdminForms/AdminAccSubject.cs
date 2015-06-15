@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GiaoDien.FormFolder.AdminForms
+namespace Project_Topic3.FormFolder.AdminForms
 {
     public partial class AdminAccSubject : AbstractForms.AccessObj
     {

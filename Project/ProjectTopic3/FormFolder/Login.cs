@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GiaoDien.FormFolder
+namespace Project_Topic3.FormFolder
 {
     public partial class LoginForm : AbstractForms.BaseForm
     {

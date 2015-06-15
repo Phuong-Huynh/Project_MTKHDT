@@ -1,4 +1,4 @@
-﻿namespace GiaoDien.FormFolder.AbstractForms
+﻿namespace Project_Topic3.FormFolder.AbstractForms
 {
     partial class ViewTimetable
     {

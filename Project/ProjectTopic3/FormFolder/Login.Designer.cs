@@ -1,4 +1,4 @@
-﻿namespace GiaoDien.FormFolder
+﻿namespace Project_Topic3.FormFolder
 {
     partial class LoginForm
     {

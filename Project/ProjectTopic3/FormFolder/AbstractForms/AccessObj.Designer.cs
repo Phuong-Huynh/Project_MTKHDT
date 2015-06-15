@@ -1,4 +1,4 @@
-﻿namespace GiaoDien.FormFolder.AbstractForms
+﻿namespace Project_Topic3.FormFolder.AbstractForms
 {
     partial class AccessObj
     {
@@ -60,7 +60,6 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Name = "AccessObj";
-            this.Text = "AccessObj";
             this.ResumeLayout(false);
 
         }

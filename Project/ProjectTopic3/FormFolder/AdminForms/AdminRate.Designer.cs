@@ -1,4 +1,4 @@
-﻿namespace GiaoDien.FormFolder.AdminForms
+﻿namespace Project_Topic3.FormFolder.AdminForms
 {
     partial class AdminRate
     {

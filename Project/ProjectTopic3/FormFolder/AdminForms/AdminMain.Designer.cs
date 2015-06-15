@@ -1,4 +1,4 @@
-﻿namespace GiaoDien.FormFolder.AdminForms
+﻿namespace Project_Topic3.FormFolder.AdminForms
 {
     partial class AdminMain
     {
@@ -56,6 +56,7 @@
             this.btnRating.TabIndex = 19;
             this.btnRating.Text = "Xếp hạng";
             this.btnRating.UseVisualStyleBackColor = true;
+            this.btnRating.Click += new System.EventHandler(this.btnRating_Click);
             // 
             // btnAccessTimetable
             // 
@@ -86,6 +87,7 @@
             this.btnAccessClass.TabIndex = 22;
             this.btnAccessClass.Text = "Quản lý lớp";
             this.btnAccessClass.UseVisualStyleBackColor = true;
+            this.btnAccessClass.Click += new System.EventHandler(this.btnAccessClass_Click);
             // 
             // btnAccessStudent
             // 
@@ -106,8 +108,9 @@
             this.btnAccessSubject.TabIndex = 24;
             this.btnAccessSubject.Text = "Quản lý môn học";
             this.btnAccessSubject.UseVisualStyleBackColor = true;
+            this.btnAccessSubject.Click += new System.EventHandler(this.btnAccessSubject_Click);
             // 
-            // MainAdmin
+            // AdminMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,7 +122,7 @@
             this.Controls.Add(this.btnAccessTimetable);
             this.Controls.Add(this.btnRating);
             this.Controls.Add(this.label4);
-            this.Name = "MainAdmin";
+            this.Name = "AdminMain";
             this.ResumeLayout(false);
             this.PerformLayout();
 

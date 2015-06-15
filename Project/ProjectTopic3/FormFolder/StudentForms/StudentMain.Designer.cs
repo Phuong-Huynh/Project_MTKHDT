@@ -1,4 +1,4 @@
-﻿namespace GiaoDien.FormFolder.StudentForms
+﻿namespace Project_Topic3.FormFolder.StudentForms
 {
     partial class StudentMain
     {
