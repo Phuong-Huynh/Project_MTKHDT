@@ -69,7 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataLayer\DAO\MyDbContext.cs" />
-    <Compile Include="DataLayer\DTO\Class1.cs" />
     <Compile Include="DataLayer\DTO\CTHocKi.cs" />
     <Compile Include="DataLayer\DTO\GiangVien.cs" />
     <Compile Include="DataLayer\DTO\HocKi.cs" />
