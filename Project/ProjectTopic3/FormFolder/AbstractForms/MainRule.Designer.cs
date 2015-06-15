@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        protected System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,6 +36,7 @@
             this.lbName = new System.Windows.Forms.Label();
             this.btnEditInfo = new System.Windows.Forms.Button();
             this.btnViewTimetable = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
@@ -118,11 +119,22 @@
             this.btnViewTimetable.Text = "Xem thời khóa biểu";
             this.btnViewTimetable.UseVisualStyleBackColor = true;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(220, 29);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(99, 24);
+            this.lblTitle.TabIndex = 25;
+            this.lblTitle.Text = "QUẢN LÝ";
+            // 
             // MainRule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 290);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnViewTimetable);
             this.Controls.Add(this.btnEditInfo);
             this.Controls.Add(this.lbBirthDay);
@@ -140,14 +152,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbBirthDay;
-        private System.Windows.Forms.Label lbAddress;
-        private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Button btnEditInfo;
-        private System.Windows.Forms.Button btnViewTimetable;
+        protected System.Windows.Forms.Label label3;
+        protected System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Label label2;
+        protected System.Windows.Forms.Label lbBirthDay;
+        protected System.Windows.Forms.Label lbAddress;
+        protected System.Windows.Forms.Label lbName;
+        protected System.Windows.Forms.Button btnEditInfo;
+        protected System.Windows.Forms.Button btnViewTimetable;
+        protected System.Windows.Forms.Label lblTitle;
 
     }
 }

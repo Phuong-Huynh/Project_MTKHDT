@@ -12,7 +12,11 @@ namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentViewTimetable : AbstractForms.ViewTimetable
     {
-        public StudentViewTimetable() : base() { InitializeComponent(); }
+        public StudentViewTimetable()
+        {
+            this.lblTitle.Text = "LỊCH HỌC";
+            InitializeComponent(); 
+        }
 
     }
 }

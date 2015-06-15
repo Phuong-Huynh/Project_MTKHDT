@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 261);
             this.Name = "StudentEditInfo";
-            this.Text = "StudentEditInfo";
+            this.Text = "HỌC SINH";
             this.ResumeLayout(false);
             this.PerformLayout();
 

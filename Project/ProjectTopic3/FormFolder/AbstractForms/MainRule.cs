@@ -17,10 +17,13 @@ namespace Project_Topic3.FormFolder.AbstractForms
             InitializeComponent();
         }
 
-        protected virtual void btnEditInfo_Click(object sender, EventArgs e) {
-            MessageBox.Show("koko");
+        protected virtual void btnEditInfo_Click(object sender, EventArgs e)
+        {
         }
 
-        protected virtual void btnViewTimetable_Click(object sender, EventArgs e) { }
+
+        protected virtual void btnViewTimetable_Click(object sender, EventArgs e)
+        { 
+        }
     }
 }

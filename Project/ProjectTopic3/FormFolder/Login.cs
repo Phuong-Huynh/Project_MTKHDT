@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Project_Topic3.FormFolder.AdminForms;
+using Project_Topic3.FormFolder.StudentForms;
+using Project_Topic3.FormFolder.TeacherForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +25,21 @@ namespace Project_Topic3.FormFolder
             this.Hide();
             AbstractForms.BaseForm Form1 = new AdminForms.AdminMain();
             Form1.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new AdminMain().ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new StudentMain().ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new TeacherMain().ShowDialog();
         }
     }
 }

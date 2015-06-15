@@ -13,6 +13,7 @@ namespace Project_Topic3.FormFolder.StudentForms
     public partial class StudentMain : AbstractForms.MainRule
     {
         public StudentMain() {
+            this.lblTitle.Text = "QUẢN LÝ HỌC SINH";
             InitializeComponent();
         }
 

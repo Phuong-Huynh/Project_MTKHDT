@@ -12,6 +12,13 @@ namespace Project_Topic3.FormFolder.AbstractForms
 {
     public partial class BaseForm : Form
     {
+        public BaseForm()
+        {
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MaximizeBox = false;
+            this.InitializeComponent();
+            
+        }
         public void exit(){
             this.Close();
         }

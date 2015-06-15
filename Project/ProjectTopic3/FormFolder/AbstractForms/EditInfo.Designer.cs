@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        protected System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -35,7 +35,7 @@
             this.tbxBirthday = new System.Windows.Forms.TextBox();
             this.tbxAddress = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -102,22 +102,22 @@
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lblTitle
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(134, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(233, 24);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "CẬP NHẬT THÔNG TIN";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(134, 24);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(233, 24);
+            this.lblTitle.TabIndex = 24;
+            this.lblTitle.Text = "CẬP NHẬT THÔNG TIN";
             // 
             // EditInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 261);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbxAddress);
             this.Controls.Add(this.tbxBirthday);
@@ -133,13 +133,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbxName;
-        private System.Windows.Forms.TextBox tbxBirthday;
-        private System.Windows.Forms.TextBox tbxAddress;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Label label4;
+        protected System.Windows.Forms.Label label2;
+        protected System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Label label3;
+        protected System.Windows.Forms.TextBox tbxName;
+        protected System.Windows.Forms.TextBox tbxBirthday;
+        protected System.Windows.Forms.TextBox tbxAddress;
+        protected System.Windows.Forms.Button btnSave;
+        protected System.Windows.Forms.Label lblTitle;
     }
 }

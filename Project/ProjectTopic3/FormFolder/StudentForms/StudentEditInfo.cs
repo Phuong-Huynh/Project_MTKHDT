@@ -12,6 +12,9 @@ namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentEditInfo : AbstractForms.EditInfo
     {
-        public StudentEditInfo() : base() { InitializeComponent(); }
+        public StudentEditInfo()
+        { 
+            InitializeComponent(); 
+        }
     }
 }

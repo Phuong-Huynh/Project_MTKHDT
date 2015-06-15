@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        protected System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,19 +26,19 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbxTerm = new System.Windows.Forms.ComboBox();
             this.cbxYear = new System.Windows.Forms.ComboBox();
             this.dgvTimetable = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Weekday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Room = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.cId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cWeekday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimetable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,51 +82,51 @@
             // 
             this.dgvTimetable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTimetable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.Name,
-            this.Weekday,
-            this.Time,
-            this.Room});
+            this.cId,
+            this.cName,
+            this.cWeekday,
+            this.cTime,
+            this.cRoom});
             this.dgvTimetable.Location = new System.Drawing.Point(84, 119);
             this.dgvTimetable.Name = "dgvTimetable";
             this.dgvTimetable.Size = new System.Drawing.Size(493, 119);
             this.dgvTimetable.TabIndex = 48;
             // 
-            // Id
+            // lblTitle
             // 
-            this.Id.HeaderText = "STT";
-            this.Id.Name = "Id";
-            this.Id.Width = 50;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(238, 26);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(172, 24);
+            this.lblTitle.TabIndex = 47;
+            this.lblTitle.Text = "LỊCH GIẢNG DẠY";
             // 
-            // Name
+            // cId
             // 
-            this.Name.HeaderText = "Tên môn học";
-            this.Name.Name = "Name";
+            this.cId.HeaderText = "STT";
+            this.cId.Name = "cId";
+            this.cId.Width = 50;
             // 
-            // Weekday
+            // cName
             // 
-            this.Weekday.HeaderText = "Thứ";
-            this.Weekday.Name = "Weekday";
+            this.cName.HeaderText = "Tên môn học";
+            this.cName.Name = "cName";
             // 
-            // Time
+            // cWeekday
             // 
-            this.Time.HeaderText = "Thời gian học";
-            this.Time.Name = "Time";
+            this.cWeekday.HeaderText = "Thứ";
+            this.cWeekday.Name = "cWeekday";
             // 
-            // Room
+            // cTime
             // 
-            this.Room.HeaderText = "Phòng";
-            this.Room.Name = "Room";
+            this.cTime.HeaderText = "Thời gian học";
+            this.cTime.Name = "cTime";
             // 
-            // label1
+            // cRoom
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(238, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 24);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "LỊCH GIẢNG DẠY";
+            this.cRoom.HeaderText = "Phòng";
+            this.cRoom.Name = "cRoom";
             // 
             // ViewTimetable
             // 
@@ -134,11 +134,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 265);
             this.Controls.Add(this.dgvTimetable);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.cbxYear);
             this.Controls.Add(this.cbxTerm);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
+            this.Name = "ViewTimetable";
             this.Text = "ViewTimetable";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimetable)).EndInit();
             this.ResumeLayout(false);
@@ -148,16 +149,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbxTerm;
-        private System.Windows.Forms.ComboBox cbxYear;
-        private System.Windows.Forms.DataGridView dgvTimetable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Weekday;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Room;
-        private System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Label label5;
+        protected System.Windows.Forms.Label label6;
+        protected System.Windows.Forms.ComboBox cbxTerm;
+        protected System.Windows.Forms.ComboBox cbxYear;
+        protected System.Windows.Forms.DataGridView dgvTimetable;
+        protected System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cWeekday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cRoom;
+       
+        
     }
 }

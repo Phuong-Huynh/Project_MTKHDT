@@ -14,6 +14,7 @@ namespace Project_Topic3.FormFolder.AbstractForms
     {
         public AccessObj()
         {
+            
             InitializeComponent();
         }
     }

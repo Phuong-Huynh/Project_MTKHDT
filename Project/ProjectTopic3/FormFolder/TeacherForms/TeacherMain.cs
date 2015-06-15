@@ -12,7 +12,10 @@ namespace Project_Topic3.FormFolder.TeacherForms
 {
     public partial class TeacherMain : AbstractForms.MainRule
     {
-        public TeacherMain() : base() { InitializeComponent(); }
+        public TeacherMain()
+        {
+            this.lblTitle.Text = "QUẢN LÝ GIẢNG VIÊN";
+            InitializeComponent(); }
 
         private void btnAddScores_Click(object sender, EventArgs e)
         {
@@ -31,6 +34,11 @@ namespace Project_Topic3.FormFolder.TeacherForms
         {
             AbstractForms.BaseForm formAcc = new TeacherViewTimetable();
             formAcc.ShowDialog();
+        }
+
+        private void btnAddScores_Click(object sender, EventArgs e)
+        {
+            new TeacherAddScore().ShowDialog();
         }
     }
 }

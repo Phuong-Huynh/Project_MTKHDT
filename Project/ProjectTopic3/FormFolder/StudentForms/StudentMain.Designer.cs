@@ -31,7 +31,6 @@
             this.lbMSSV = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnRegisSubj = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbMSSV
@@ -65,31 +64,27 @@
             this.btnRegisSubj.UseVisualStyleBackColor = true;
             this.btnRegisSubj.Click += new System.EventHandler(this.btnRegisSubj_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(199, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 24);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "TRANG HỌC SINH";
-            // 
             // StudentMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(566, 267);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegisSubj);
             this.Controls.Add(this.lbMSSV);
             this.Controls.Add(this.label6);
             this.Name = "StudentMain";
-            this.Text = "";
+            this.Text = "QUẢN LÝ HỌC SINH";
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.lbName, 0);
+            this.Controls.SetChildIndex(this.lbAddress, 0);
+            this.Controls.SetChildIndex(this.lbBirthDay, 0);
+            this.Controls.SetChildIndex(this.btnEditInfo, 0);
+            this.Controls.SetChildIndex(this.btnViewTimetable, 0);
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.lbMSSV, 0);
             this.Controls.SetChildIndex(this.btnRegisSubj, 0);
-            this.Controls.SetChildIndex(this.label4, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,6 +95,5 @@
         private System.Windows.Forms.Label lbMSSV;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnRegisSubj;
-        private System.Windows.Forms.Label label4;
     }
 }

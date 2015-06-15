@@ -12,7 +12,7 @@ namespace Project_Topic3.FormFolder.AbstractForms
 {
     public partial class EditInfo : BaseForm
     {
-        public EditInfo()
+        public EditInfo() :base()
         {
             InitializeComponent();
         }
