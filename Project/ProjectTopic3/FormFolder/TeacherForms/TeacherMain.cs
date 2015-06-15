@@ -14,6 +14,13 @@ namespace Project_Topic3.FormFolder.TeacherForms
     {
         public TeacherMain() : base() { InitializeComponent(); }
 
+        private void btnAddScores_Click(object sender, EventArgs e)
+        {
+            AbstractForms.BaseForm formAcc = new TeacherAddScore();
+
+            formAcc.ShowDialog();
+        }
+
         protected override void btnEditInfo_Click(object sender, EventArgs e)
         {
             AbstractForms.BaseForm formAcc = new TeacherEditInfo();

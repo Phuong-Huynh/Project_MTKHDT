@@ -41,6 +41,7 @@
             this.btnAddScores.TabIndex = 13;
             this.btnAddScores.Text = "Nhập điểm";
             this.btnAddScores.UseVisualStyleBackColor = true;
+            this.btnAddScores.Click += new System.EventHandler(this.btnAddScores_Click);
             // 
             // label4
             // 
@@ -52,14 +53,14 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "TRANG GIÁO VIÊN";
             // 
-            // MainTeacher
+            // TeacherMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 290);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnAddScores);
-            this.Name = "MainTeacher";
+            this.Name = "TeacherMain";
             this.Text = "";
             this.Controls.SetChildIndex(this.btnAddScores, 0);
             this.Controls.SetChildIndex(this.label4, 0);

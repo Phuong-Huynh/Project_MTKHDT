@@ -28,7 +28,7 @@ namespace Project_Topic3.FormFolder.StudentForms
             formAcc.ShowDialog();
         }
 
-         protected override void btnViewTimetable_Click(object sender, EventArgs e)
+        protected override void btnViewTimetable_Click(object sender, EventArgs e)
         {
             AbstractForms.BaseForm formAcc = new StudentViewTimetable();
             formAcc.ShowDialog();

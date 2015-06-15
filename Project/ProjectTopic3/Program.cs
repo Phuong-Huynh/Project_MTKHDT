@@ -16,7 +16,7 @@ namespace Project_Topic3.FormFolder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminForms.AdminMain());
+            Application.Run(new StudentForms.StudentMain());
         }
     }
 }
