@@ -36,9 +36,6 @@ namespace Project_Topic3.FormFolder.TeacherForms
             formAcc.ShowDialog();
         }
 
-        private void btnAddScores_Click(object sender, EventArgs e)
-        {
-            new TeacherAddScore().ShowDialog();
-        }
+        
     }
 }
