@@ -99,8 +99,9 @@ namespace Project_Topic3.DataLayer.DAO
         public List<CTHocKi> getListWithCurrentTerm() {
             using (MyDbContext db = new MyDbContext())
             {
-                HocKi hocki = db.HocKis.Last();
-                return db.CTHocKis.Where(n => n.IdHocKi == hocki.Id).ToList<CTHocKi>();
+                List<HocKi> hocki = db.HocKis.ToList();
+                //return db.CTHocKis.Where(n => n.IdHocKi == hocki.Id).ToList<CTHocKi>();
+                return null;
             }
         }
     }
