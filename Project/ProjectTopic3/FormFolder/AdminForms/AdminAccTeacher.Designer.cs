@@ -30,11 +30,23 @@
         {
             this.SuspendLayout();
             // 
+            // lbTitleLayout
+            // 
+            this.lbTitleLayout.Size = new System.Drawing.Size(209, 24);
+            this.lbTitleLayout.Text = "QUẢN LÝ GIÁO VIÊN";
+            // 
+            // lbTittleDataGridview
+            // 
+            this.lbTittleDataGridview.Size = new System.Drawing.Size(130, 16);
+            this.lbTittleDataGridview.Text = "Danh sách giáo viên";
+            // 
             // AdminAccTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 482);
+            this.Name = "AdminAccTeacher";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

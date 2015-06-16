@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Topic3.DataLayer.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_Topic3.DataLayer.DAO
 {
-    class GiangVienDAO :IDAO<GiangVien>
+    public class GiangVienDAO :IDAO<GiangVien>, IObjectDAO<GiangVien,GiangVienDTO>
     {
         
 
@@ -92,5 +93,37 @@ namespace Project_Topic3.DataLayer.DAO
                 return db.GiangViens.ToList<GiangVien>();
             }
         }
+
+        public GiangVienDTO convert(GiangVien t)
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+                GiangVienDTO gvdto = new GiangVienDTO
+                {
+                    Id = t.Id,
+                    HoTen = t.HoTen,
+                    NgaySinh = t.NgaySinh,
+                    DiaChi = t.DiaChi,
+                };
+
+                return gvdto;
+            }
+        }
+
+        public List<GiangVienDTO> getListDTO()
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+                List<GiangVienDTO> listDTO = new List<GiangVienDTO>();
+                List<GiangVien> list = this.getList();
+                foreach (GiangVien g in list)
+                {
+                    listDTO.Add(this.convert(g));
+                }
+                return listDTO;
+            }
+        }
+
+        
     }
 }

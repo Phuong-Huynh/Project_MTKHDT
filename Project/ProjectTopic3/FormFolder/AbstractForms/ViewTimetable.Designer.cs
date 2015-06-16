@@ -87,9 +87,9 @@
             this.cWeekday,
             this.cTime,
             this.cRoom});
-            this.dgvTimetable.Location = new System.Drawing.Point(84, 119);
+            this.dgvTimetable.Location = new System.Drawing.Point(56, 119);
             this.dgvTimetable.Name = "dgvTimetable";
-            this.dgvTimetable.Size = new System.Drawing.Size(493, 119);
+            this.dgvTimetable.Size = new System.Drawing.Size(593, 119);
             this.dgvTimetable.TabIndex = 48;
             // 
             // lblTitle

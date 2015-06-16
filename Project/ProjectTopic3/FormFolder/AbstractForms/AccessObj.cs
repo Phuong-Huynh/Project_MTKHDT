@@ -23,5 +23,15 @@ namespace Project_Topic3.FormFolder.AbstractForms
 
         }
 
+        protected virtual void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected virtual void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

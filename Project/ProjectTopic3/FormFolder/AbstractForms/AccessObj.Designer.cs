@@ -49,6 +49,7 @@
             this.btnDelete.TabIndex = 64;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -59,6 +60,7 @@
             this.btnAdd.TabIndex = 63;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lbTitleLayout
             // 
@@ -138,10 +140,10 @@
         protected System.Windows.Forms.Label lbTitleLayout;
         protected System.Windows.Forms.Label lbTittleDataGridview;
         protected System.Windows.Forms.DataGridView dgvListObjects;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdObj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameObj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BirthdayObj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AddressObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn IdObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn NameObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn BirthdayObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn AddressObj;
 
     }
 }
