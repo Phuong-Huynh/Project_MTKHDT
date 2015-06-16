@@ -25,5 +25,12 @@ namespace Project_Topic3.FormFolder.AbstractForms
         protected virtual void btnViewTimetable_Click(object sender, EventArgs e)
         { 
         }
+
+        protected virtual void Form_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
