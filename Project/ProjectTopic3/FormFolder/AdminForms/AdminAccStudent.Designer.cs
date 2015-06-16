@@ -38,6 +38,10 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            //override
+            this.lbTitleLayout.Text = "QUẢN LÝ HỌC SINH";
+            this.lbTittleDataGridview.Text = "Danh sách học sinh";
+
         }
 
         #endregion
