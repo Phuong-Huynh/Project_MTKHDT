@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_Topic3.DataLayer.DAO
 {
-    class HocSinhDAO :IDAO<HocSinh>
+    public class HocSinhDAO :IDAO<HocSinh>
     {
         public HocSinh get(int id)
         {

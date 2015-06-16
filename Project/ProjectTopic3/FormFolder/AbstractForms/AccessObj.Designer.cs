@@ -140,10 +140,10 @@
         protected System.Windows.Forms.Label lbTitleLayout;
         protected System.Windows.Forms.Label lbTittleDataGridview;
         protected System.Windows.Forms.DataGridView dgvListObjects;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdObj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameObj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BirthdayObj;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AddressObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn IdObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn NameObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn BirthdayObj;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn AddressObj;
 
     }
 }

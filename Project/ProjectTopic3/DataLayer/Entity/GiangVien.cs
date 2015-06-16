@@ -21,7 +21,7 @@ namespace Project_Topic3.DataLayer
     
         public int Id { get; set; }
         public string HoTen { get; set; }
-        public Nullable<System.DateTime> NgaySinh { get; set; }
+        public DateTime NgaySinh { get; set; }
         public string DiaChi { get; set; }
         public Nullable<int> IdMonHoc { get; set; }
         public int IdTaiKhoan { get; set; }
