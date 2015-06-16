@@ -22,5 +22,10 @@ namespace Project_Topic3.FormFolder.AbstractForms
         public void exit(){
             this.Close();
         }
+
+        protected virtual void Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
