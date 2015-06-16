@@ -10,7 +10,7 @@ namespace Project_Topic3.DataLayer.DAO
     class MyDbContext : DbContext
     {
 
-        public MyDbContext() : base("name=MyStundent") { }
+        public MyDbContext() : base("name=MyStudent") { }
 
         public virtual DbSet<CTHocKi> CTHocKis { get; set; }
         public virtual DbSet<GiangVien> GiangViens { get; set; }

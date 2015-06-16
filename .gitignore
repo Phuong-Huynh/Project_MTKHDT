@@ -40,7 +40,5 @@ rcf/
 ## Multiple applications of FedUtil will result in *.backup.1, *.backup.2, etc., files for Web.config and FederationMetadata.xml
 *.backup.*
 
-
-
 # ReSharper
 _ReSharper*/

@@ -34,7 +34,8 @@ namespace Project_Topic3.FormFolder
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new StudentMain().ShowDialog();
+            //Chú ý: truyền 1 đối tượng học sinh vào
+            new StudentMain(null).ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)

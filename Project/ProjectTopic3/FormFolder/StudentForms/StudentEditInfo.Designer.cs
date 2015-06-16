@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(478, 261);
             this.Name = "StudentEditInfo";
             this.Text = "HỌC SINH";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
