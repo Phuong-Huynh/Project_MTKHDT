@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_Topic3.DataLayer.DAO
 {
-    class CTHocKiDAO : IDAO<CTHocKi>
+    public class CTHocKiDAO : IDAO<CTHocKi>
     {
         
         public CTHocKiDAO()
@@ -93,6 +93,15 @@ namespace Project_Topic3.DataLayer.DAO
             using (MyDbContext db = new MyDbContext())
             {
                 return db.CTHocKis.ToList<CTHocKi>();
+            }
+        }
+
+        public List<CTHocKi> getListWithCurrentTerm() {
+            using (MyDbContext db = new MyDbContext())
+            {
+                List<HocKi> hocki = db.HocKis.ToList();
+                //return db.CTHocKis.Where(n => n.IdHocKi == hocki.Id).ToList<CTHocKi>();
+                return null;
             }
         }
     }

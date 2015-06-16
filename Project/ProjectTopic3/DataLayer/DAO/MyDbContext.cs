@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project_Topic3.DataLayer.DAO
 {
-    class MyDbContext : DbContext
+    public partial class MyDbContext : DbContext
     {
 
         public MyDbContext() : base("name=MyStudent") { }
