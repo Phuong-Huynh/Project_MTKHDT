@@ -21,7 +21,7 @@ namespace Project_Topic3.FormFolder.AdminForms
             InitializeComponent();
             hsDAO = new HocSinhDAO();
             
-            //this.dgvListObjects.ColumnAdded
+            //this.dgvListObjects.ColumnAdded hhgfgjj
         }
 
         protected override void Form_Load(object sender, EventArgs e)

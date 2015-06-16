@@ -73,6 +73,7 @@
     <Compile Include="DataLayer\DAO\HocKiDAO.cs" />
     <Compile Include="DataLayer\DAO\HocSinhDAO.cs" />
     <Compile Include="DataLayer\DAO\IDAO.cs" />
+    <Compile Include="DataLayer\DAO\IObjectDAO.cs" />
     <Compile Include="DataLayer\DAO\LopDAO.cs" />
     <Compile Include="DataLayer\DAO\MonHocDAO.cs" />
     <Compile Include="DataLayer\DAO\MyDbContext.cs" />
@@ -80,16 +81,19 @@
     <Compile Include="DataLayer\DAO\TaiKhoanDAO.cs" />
     <Compile Include="DataLayer\DAO\TKBDAO.cs" />
     <Compile Include="DataLayer\DAO\TongKetHKDAO.cs" />
-    <Compile Include="DataLayer\DTO\CTHocKi.cs" />
-    <Compile Include="DataLayer\DTO\GiangVien.cs" />
-    <Compile Include="DataLayer\DTO\HocKi.cs" />
-    <Compile Include="DataLayer\DTO\HocSinh.cs" />
-    <Compile Include="DataLayer\DTO\Lop.cs" />
-    <Compile Include="DataLayer\DTO\MonHoc.cs" />
-    <Compile Include="DataLayer\DTO\Role.cs" />
-    <Compile Include="DataLayer\DTO\TaiKhoan.cs" />
-    <Compile Include="DataLayer\DTO\TKB.cs" />
-    <Compile Include="DataLayer\DTO\TongKetHK.cs" />
+    <Compile Include="DataLayer\DTO\GiangVienDTO.cs" />
+    <Compile Include="DataLayer\DTO\HocSinhDTO.cs" />
+    <Compile Include="DataLayer\DTO\PersonDTO.cs" />
+    <Compile Include="DataLayer\Entity\CTHocKi.cs" />
+    <Compile Include="DataLayer\Entity\GiangVien.cs" />
+    <Compile Include="DataLayer\Entity\HocKi.cs" />
+    <Compile Include="DataLayer\Entity\HocSinh.cs" />
+    <Compile Include="DataLayer\Entity\Lop.cs" />
+    <Compile Include="DataLayer\Entity\MonHoc.cs" />
+    <Compile Include="DataLayer\Entity\Role.cs" />
+    <Compile Include="DataLayer\Entity\TaiKhoan.cs" />
+    <Compile Include="DataLayer\Entity\TKB.cs" />
+    <Compile Include="DataLayer\Entity\TongKetHK.cs" />
     <Compile Include="FormFolder\AbstractForms\AccessObj.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +331,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
