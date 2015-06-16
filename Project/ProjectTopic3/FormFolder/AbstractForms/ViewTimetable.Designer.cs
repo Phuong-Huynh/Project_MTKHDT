@@ -39,7 +39,6 @@
             this.cWeekday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimetable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,8 +86,7 @@
             this.cName,
             this.cWeekday,
             this.cTime,
-            this.cRoom,
-            this.cScore});
+            this.cRoom});
             this.dgvTimetable.Location = new System.Drawing.Point(56, 119);
             this.dgvTimetable.Name = "dgvTimetable";
             this.dgvTimetable.Size = new System.Drawing.Size(593, 119);
@@ -130,11 +128,6 @@
             this.cRoom.HeaderText = "Phòng";
             this.cRoom.Name = "cRoom";
             // 
-            // cScore
-            // 
-            this.cScore.HeaderText = "Điểm";
-            this.cScore.Name = "cScore";
-            // 
             // ViewTimetable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,7 +160,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cWeekday;
         private System.Windows.Forms.DataGridViewTextBoxColumn cTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn cRoom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cScore;
        
         
     }
