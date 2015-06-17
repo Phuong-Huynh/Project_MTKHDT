@@ -111,7 +111,7 @@ namespace Project_Topic3.DataLayer.DAO
                 PhongHoc = t.PhongHoc,
                 NgayHoc = t.NgayHoc,
                 GioHoc = t.GioHoc,
-                TenHocKi = t.HocKi.TenHK,
+                //TenHocKi = t.HocKi.TenHK,
                 TenMonHoc = t.MonHoc.TenMonHoc,
                 TenGiangVien = t.GiangVien.HoTen,
             };

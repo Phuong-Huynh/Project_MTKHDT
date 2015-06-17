@@ -18,8 +18,8 @@ namespace Project_Topic3.DataLayer.DTO
         public string PhongHoc { get; set; }
         public System.DateTime NgayHoc { get; set; }
         public string GioHoc { get; set; }
-        public int TenHocKi { get; set; }
-        public int TenMonHoc { get; set; }
-        public int TenGiangVien { get; set; }
+        //public string TenHocKi { get; set; }
+        public string TenMonHoc { get; set; }
+        public string TenGiangVien { get; set; }
     }
 }
