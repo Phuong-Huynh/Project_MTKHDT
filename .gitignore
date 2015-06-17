@@ -43,3 +43,4 @@ rcf/
 # ReSharper
 _ReSharper*/
 /Project/ProjectTopic3/App.config
+/Project/ProjectTopic3/Program.cs
