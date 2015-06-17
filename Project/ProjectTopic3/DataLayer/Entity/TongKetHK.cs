@@ -15,8 +15,6 @@ namespace Project_Topic3.DataLayer
     public partial class TongKetHK
     {
         public int Id { get; set; }
-        public Nullable<int> IdHocSinh { get; set; }
-        public Nullable<int> IdHocKi { get; set; }
         public Nullable<int> DiemTB { get; set; }
     
         public virtual HocKi HocKi { get; set; }

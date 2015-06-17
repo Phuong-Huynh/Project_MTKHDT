@@ -15,8 +15,6 @@ namespace Project_Topic3.DataLayer
     public partial class TKB
     {
         public int Id { get; set; }
-        public int IdHocSinh { get; set; }
-        public int IdCTHocKi { get; set; }
         public Nullable<int> Diem { get; set; }
     
         public virtual CTHocKi CTHocKi { get; set; }

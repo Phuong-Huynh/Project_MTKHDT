@@ -23,9 +23,6 @@ namespace Project_Topic3.DataLayer
         public string PhongHoc { get; set; }
         public System.DateTime NgayHoc { get; set; }
         public string GioHoc { get; set; }
-        public int IdHocKi { get; set; }
-        public int IdMonHoc { get; set; }
-        public int IdGiangVien { get; set; }
     
         public virtual GiangVien GiangVien { get; set; }
         public virtual HocKi HocKi { get; set; }

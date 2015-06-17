@@ -91,6 +91,7 @@ namespace Project_Topic3.DataLayer.DAO
         {
             using (MyDbContext db = new MyDbContext())
             {
+                //Loi
                 return db.CTHocKis.ToList<CTHocKi>();
             }
         }
@@ -99,7 +100,7 @@ namespace Project_Topic3.DataLayer.DAO
             using (MyDbContext db = new MyDbContext())
             {
                 HocKi hocki = db.HocKis.OrderByDescending(y => y.Id).First();
-                return db.CTHocKis.Where(n => n.IdHocKi == hocki.Id).ToList<CTHocKi>();
+                return db.CTHocKis.Where(n => n.HocKi == hocki).ToList<CTHocKi>();
             }
         }
 

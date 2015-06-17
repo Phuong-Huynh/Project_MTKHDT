@@ -23,8 +23,6 @@ namespace Project_Topic3.DataLayer
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }
         public string DiaChi { get; set; }
-        public Nullable<int> IdMonHoc { get; set; }
-        public int IdTaiKhoan { get; set; }
     
         public virtual ICollection<CTHocKi> CTHocKis { get; set; }
         public virtual MonHoc MonHoc { get; set; }

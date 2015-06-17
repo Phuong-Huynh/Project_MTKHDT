@@ -25,8 +25,6 @@ namespace Project_Topic3.DataLayer
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }
         public string DiaChi { get; set; }
-        public int IdLop { get; set; }
-        public int IdTaiKhoan { get; set; }
     
         public virtual Lop Lop { get; set; }
         public virtual TaiKhoan TaiKhoan { get; set; }
