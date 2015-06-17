@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Topic3.DataLayer.DAO
 {
-    public interface IObjectDAO<T,DTO>
+    public interface IObjectDAO<T, DTO>
     {
         DTO convert(T t);
         List<DTO> getListDTO();
