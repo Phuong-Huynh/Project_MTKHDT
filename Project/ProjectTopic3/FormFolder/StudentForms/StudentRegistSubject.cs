@@ -1,5 +1,6 @@
 ﻿using Project_Topic3.DataLayer;
 using Project_Topic3.DataLayer.DAO;
+using Project_Topic3.DataLayer.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace Project_Topic3.FormFolder.StudentForms
 
         protected override void Form_Load(object sender, EventArgs e)
         {
-            List<CTHocKi> dsMonHoc = ctHocKiDAO.getListWithCurrentTerm();
+            List<CTHocKiDTO> dsMonHoc = ctHocKiDAO.getListDTO();
             dgvListSubjects.DataSource = dsMonHoc;
         }
     }

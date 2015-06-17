@@ -118,9 +118,21 @@ namespace Project_Topic3.DataLayer.DAO
             return gvdto;
         }
 
+        public List<CTHocKiDTO> getListDTO(List<CTHocKi> t)
+        {
+            List<CTHocKiDTO> listDTO = new List<CTHocKiDTO>();   
+            foreach (CTHocKi g in t)
+            {
+                listDTO.Add(this.convert(g));
+            }
+            return listDTO;
+        }
+
         public List<CTHocKiDTO> getListDTO()
         {
-            throw new NotImplementedException();
+            List<CTHocKi> list = this.getList();
+            return this.getListDTO(list);
         }
+
     }
 }

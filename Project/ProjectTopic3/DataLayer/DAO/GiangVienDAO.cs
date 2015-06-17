@@ -87,33 +87,30 @@ namespace Project_Topic3.DataLayer.DAO
 
         public GiangVienDTO convert(GiangVien t)
         {
-            using (MyDbContext db = new MyDbContext())
+            GiangVienDTO gvdto = new GiangVienDTO
             {
-                GiangVienDTO gvdto = new GiangVienDTO
-                {
-                    Id = t.Id,
-                    HoTen = t.HoTen,
-                    NgaySinh = t.NgaySinh,
-                    DiaChi = t.DiaChi,
-                };
-                return gvdto;
-            }
+                Id = t.Id,
+                HoTen = t.HoTen,
+                NgaySinh = t.NgaySinh,
+                DiaChi = t.DiaChi,
+            };
+            return gvdto;
         }
 
         public List<GiangVienDTO> getListDTO()
         {
-            using (MyDbContext db = new MyDbContext())
-            {
-                List<GiangVienDTO> listDTO = new List<GiangVienDTO>();
-                List<GiangVien> list = this.getList();
-                foreach (GiangVien g in list)
-                {
-                    listDTO.Add(this.convert(g));
-                }
-                return listDTO;
-            }
+            List<GiangVien> list = this.getList();
+            return this.getListDTO(list);    
         }
 
-        
+        public List<GiangVienDTO> getListDTO(List<GiangVien> t)
+        {
+            List<GiangVienDTO> listDTO = new List<GiangVienDTO>();
+            foreach (GiangVien g in t)
+            {
+                listDTO.Add(this.convert(g));
+            }
+            return listDTO;
+        }
     }
 }

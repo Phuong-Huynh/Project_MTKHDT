@@ -93,9 +93,7 @@ namespace Project_Topic3.DataLayer.DAO
         }
         public HocSinhDTO convert(HocSinh t)
         {
-            using (MyDbContext db = new MyDbContext())
-            {
-                HocSinhDTO hsdto = new HocSinhDTO
+            HocSinhDTO hsdto = new HocSinhDTO
                 {
                     Id = t.Id,
                     HoTen = t.HoTen,
@@ -105,20 +103,22 @@ namespace Project_Topic3.DataLayer.DAO
                     IdTaiKhoan = t.IdTaiKhoan,
                 };
                 return hsdto;
-            }
         }
         public List<HocSinhDTO> getListDTO()
         {
-            using (MyDbContext db = new MyDbContext())
+            List<HocSinh> list = this.getList();
+            return this.getListDTO(list);
+        }
+
+
+        public List<HocSinhDTO> getListDTO(List<HocSinh> t)
+        {
+            List<HocSinhDTO> listDTO = new List<HocSinhDTO>();
+            foreach (HocSinh hs in t)
             {
-                List<HocSinhDTO> listDTO = new List<HocSinhDTO>();
-                List<HocSinh> list = this.getList();
-                foreach (HocSinh hs in list)
-                {
-                    listDTO.Add(this.convert(hs));
-                }
-                return listDTO;
+                listDTO.Add(this.convert(hs));
             }
+            return listDTO;
         }
     }
 }

@@ -10,5 +10,6 @@ namespace Project_Topic3.DataLayer.DAO
     {
         DTO convert(T t);
         List<DTO> getListDTO();
+        List<DTO> getListDTO(List<T> t);
     }
 }
