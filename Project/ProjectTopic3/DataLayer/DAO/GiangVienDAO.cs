@@ -14,14 +14,10 @@ namespace Project_Topic3.DataLayer.DAO
 
         public GiangVien get(int id)
         {
-
             using (MyDbContext db = new MyDbContext())
             {
                 return db.GiangViens.Find(id);
-
             }
-
-
         }
 
         public bool insert(GiangVien t)
@@ -38,8 +34,6 @@ namespace Project_Topic3.DataLayer.DAO
                 {
                     return false;
                 }
-
-
             }
         }
 
@@ -63,7 +57,6 @@ namespace Project_Topic3.DataLayer.DAO
 
                 }
                 return false;
-
             }
         }
 
@@ -81,8 +74,6 @@ namespace Project_Topic3.DataLayer.DAO
                 {
                     return false;
                 }
-
-
             }
         }
 
@@ -105,7 +96,6 @@ namespace Project_Topic3.DataLayer.DAO
                     NgaySinh = t.NgaySinh,
                     DiaChi = t.DiaChi,
                 };
-
                 return gvdto;
             }
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Topic3.DataLayer.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_Topic3.DataLayer.DAO
 {
-    public class CTHocKiDAO : IDAO<CTHocKi>
+    public class CTHocKiDAO : IDAO<CTHocKi>, IObjectDAO<CTHocKi, CTHocKiDTO>
     {
         
         public CTHocKiDAO()
@@ -83,8 +84,6 @@ namespace Project_Topic3.DataLayer.DAO
                 {
                     return false;
                 }
-
-               
             }
         }
 
@@ -99,10 +98,29 @@ namespace Project_Topic3.DataLayer.DAO
         public List<CTHocKi> getListWithCurrentTerm() {
             using (MyDbContext db = new MyDbContext())
             {
-                List<HocKi> hocki = db.HocKis.ToList();
-                //return db.CTHocKis.Where(n => n.IdHocKi == hocki.Id).ToList<CTHocKi>();
-                return null;
+                HocKi hocki = db.HocKis.OrderByDescending(y => y.Id).First();
+                return db.CTHocKis.Where(n => n.IdHocKi == hocki.Id).ToList<CTHocKi>();
             }
+        }
+
+        public CTHocKiDTO convert(CTHocKi t)
+        {
+            CTHocKiDTO gvdto = new CTHocKiDTO
+            {
+                Id = t.Id,
+                PhongHoc = t.PhongHoc,
+                NgayHoc = t.NgayHoc,
+                GioHoc = t.GioHoc,
+                TenHocKi = t.HocKi.TenHK,
+                TenMonHoc = t.MonHoc.TenMonHoc,
+                TenGiangVien = t.GiangVien.HoTen,
+            };
+            return gvdto;
+        }
+
+        public List<CTHocKiDTO> getListDTO()
+        {
+            throw new NotImplementedException();
         }
     }
 }

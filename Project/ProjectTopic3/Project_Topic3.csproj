@@ -36,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -81,6 +82,7 @@
     <Compile Include="DataLayer\DAO\TaiKhoanDAO.cs" />
     <Compile Include="DataLayer\DAO\TKBDAO.cs" />
     <Compile Include="DataLayer\DAO\TongKetHKDAO.cs" />
+    <Compile Include="DataLayer\DTO\CTHocKiDTO.cs" />
     <Compile Include="DataLayer\DTO\GiangVienDTO.cs" />
     <Compile Include="DataLayer\DTO\HocSinhDTO.cs" />
     <Compile Include="DataLayer\DTO\PersonDTO.cs" />
