@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Topic3.DataLayer.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project_Topic3.DataLayer.DAO
 {
-    public class HocSinhDAO :IDAO<HocSinh>
+    public class HocSinhDAO :IDAO<HocSinh>, IObjectDAO<HocSinh, HocSinhDTO>
     {
         public HocSinh get(int id)
         {
@@ -88,6 +89,35 @@ namespace Project_Topic3.DataLayer.DAO
             using (MyDbContext db = new MyDbContext())
             {
                 return db.HocSinhs.ToList<HocSinh>();
+            }
+        }
+        public HocSinhDTO convert(HocSinh t)
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+                HocSinhDTO hsdto = new HocSinhDTO
+                {
+                    Id = t.Id,
+                    HoTen = t.HoTen,
+                    NgaySinh = t.NgaySinh,
+                    DiaChi = t.DiaChi,
+                    IdLop = t.IdLop,
+                    IdTaiKhoan = t.IdTaiKhoan,
+                };
+                return hsdto;
+            }
+        }
+        public List<HocSinhDTO> getListDTO()
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+                List<HocSinhDTO> listDTO = new List<HocSinhDTO>();
+                List<HocSinh> list = this.getList();
+                foreach (HocSinh hs in list)
+                {
+                    listDTO.Add(this.convert(hs));
+                }
+                return listDTO;
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using Project_Topic3.DataLayer;
 using Project_Topic3.DataLayer.DAO;
+using Project_Topic3.DataLayer.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace Project_Topic3.FormFolder.AdminForms
     public partial class AdminAccStudent : AbstractForms.AccessObj
     {
         protected List<HocSinh> list;
+        protected List<HocSinhDTO> listDTO;
         protected HocSinhDAO hsDAO;
         public AdminAccStudent() { 
 
@@ -26,8 +28,9 @@ namespace Project_Topic3.FormFolder.AdminForms
 
         protected override void Form_Load(object sender, EventArgs e)
         {
-            base.Form_Load(sender, e);
-            list = hsDAO.getList();
+            //base.Form_Load(sender, e);
+            listDTO = hsDAO.getListDTO();
+            this.dgvListObjects.DataSource = listDTO;
 
             //fill datagridview
             
