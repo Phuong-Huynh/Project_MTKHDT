@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,7 @@ namespace Project_Topic3.FormFolder
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new StudentForms.StudentMain(null));
+            Database.SetInitializer<Project_Topic3.DataLayer.DAO.MyDbContext>(null);
         }
     }
 }
