@@ -12,14 +12,10 @@ namespace Project_Topic3.DataLayer.DAO
     {
         public HocSinh get(int id)
         {
-
             using (MyDbContext db = new MyDbContext())
             {
                 return db.HocSinhs.Find(id);
-
             }
-
-
         }
 
         public bool insert(HocSinh t)
@@ -36,8 +32,6 @@ namespace Project_Topic3.DataLayer.DAO
                 {
                     return false;
                 }
-
-
             }
         }
 
@@ -58,10 +52,8 @@ namespace Project_Topic3.DataLayer.DAO
                     {
                         return false;
                     }
-
                 }
                 return false;
-
             }
         }
 
@@ -79,8 +71,6 @@ namespace Project_Topic3.DataLayer.DAO
                 {
                     return false;
                 }
-
-
             }
         }
 
@@ -91,6 +81,7 @@ namespace Project_Topic3.DataLayer.DAO
                 return db.HocSinhs.ToList<HocSinh>();
             }
         }
+
         public HocSinhDTO convert(HocSinh t)
         {
             HocSinhDTO hsdto = new HocSinhDTO
@@ -109,7 +100,6 @@ namespace Project_Topic3.DataLayer.DAO
             List<HocSinh> list = this.getList();
             return this.getListDTO(list);
         }
-
 
         public List<HocSinhDTO> getListDTO(List<HocSinh> t)
         {
