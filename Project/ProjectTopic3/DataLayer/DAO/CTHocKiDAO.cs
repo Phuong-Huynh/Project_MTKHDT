@@ -106,19 +106,16 @@ namespace Project_Topic3.DataLayer.DAO
 
         public CTHocKiDTO convert(CTHocKi t)
         {
-            //using (MyDbContext db = new MyDbContext())
-            //{
-                CTHocKiDTO gvdto = new CTHocKiDTO
-                {
-                    Id = t.Id,
-                    PhongHoc = t.PhongHoc,
-                    NgayHoc = t.NgayHoc,
-                    GioHoc = t.GioHoc,
-                    TenGiangVien = t.GiangVien.HoTen,
-                    TenMonHoc = t.GiangVien.MonHoc.TenMonHoc,
-                };
-                return gvdto;
-           // }
+            CTHocKiDTO gvdto = new CTHocKiDTO
+            {
+                Id = t.Id,
+                PhongHoc = t.PhongHoc,
+                NgayHoc = t.NgayHoc,
+                GioHoc = t.GioHoc,
+                TenGiangVien = t.GiangVien.HoTen,
+                TenMonHoc = t.GiangVien.MonHoc.TenMonHoc,
+            };
+            return gvdto;
             
         }
 
@@ -138,5 +135,11 @@ namespace Project_Topic3.DataLayer.DAO
             return this.getListDTO(list);
         }
 
+
+
+        public CTHocKi convertDTOToEntity(CTHocKiDTO t)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

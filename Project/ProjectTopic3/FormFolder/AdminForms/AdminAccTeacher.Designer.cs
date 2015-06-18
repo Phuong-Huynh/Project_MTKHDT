@@ -32,7 +32,11 @@
             // 
             // btnDelete
             // 
-            
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lbTitleLayout
             // 
@@ -53,6 +57,9 @@
             this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
+            this.dgvListObjects.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvListObjects_MouseClick);
+            this.dgvListObjects.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvListObjects_MouseDoubleClick);
 
         }
 

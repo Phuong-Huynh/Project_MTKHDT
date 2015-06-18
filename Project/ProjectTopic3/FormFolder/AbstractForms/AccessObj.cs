@@ -14,7 +14,7 @@ namespace Project_Topic3.FormFolder.AbstractForms
     {
         public AccessObj()
         {
-            
+
             InitializeComponent();
         }
 
@@ -34,6 +34,11 @@ namespace Project_Topic3.FormFolder.AbstractForms
         }
 
         protected virtual void dgvListObjects_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        protected virtual void dgvListObjects_MouseClick(object sender, MouseEventArgs e)
         {
 
         }

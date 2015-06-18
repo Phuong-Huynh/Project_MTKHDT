@@ -41,6 +41,7 @@
             this.ClientSize = new System.Drawing.Size(653, 305);
             this.Name = "StudentViewTimetable";
             this.Text = "8";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

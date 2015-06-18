@@ -90,5 +90,12 @@ namespace Project_Topic3.DataLayer.DAO
                 return db.TKBs.ToList<TKB>();
             }
         }
+        public List<TKB> getList(HocSinh Hs)
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+                return db.TKBs.Where(n => n.HocSinhID == Hs.Id).ToList<TKB>();
+            }
+        }
     }
 }

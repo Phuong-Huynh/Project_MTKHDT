@@ -1,4 +1,5 @@
-﻿//using Project_Topic3.DataLayer;
+﻿using Project_Topic3.DataLayer.DAO;
+//using Project_Topic3.DataLayer;
 using Project_Topic3.DataLayer.DTO;
 using System;
 using System.Collections.Generic;
@@ -22,10 +23,9 @@ namespace Project_Topic3.FormFolder.StudentForms
             this.lblTitle.Text = "QUẢN LÝ HỌC SINH";
             InitializeComponent();
 
-            this.student.MSSV = "1234";
-            this.student.HoTen = "Luong thu thao";
-            this.student.NgaySinh = new DateTime(2014, 09, 12);
-            this.student.DiaChi = "12, tran phu, tphcm";
+            //Thay the bang roi tuong : test
+            HocSinhDAO hocSinhDAO = new HocSinhDAO();
+            student = hocSinhDAO.convert(hocSinhDAO.get(1));
         }
 
         private void btnRegisSubj_Click(object sender, EventArgs e)

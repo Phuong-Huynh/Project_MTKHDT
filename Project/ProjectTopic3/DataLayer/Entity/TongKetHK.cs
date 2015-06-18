@@ -29,6 +29,8 @@ namespace Project_Topic3.DataLayer
         public virtual HocSinh HocSinh { get {
             HocSinhDAO hocSinhDAO = new HocSinhDAO();
             return hocSinhDAO.get(HocSinhID);
-        } set; }
+        }
+            set { }
+        }
     }
 }

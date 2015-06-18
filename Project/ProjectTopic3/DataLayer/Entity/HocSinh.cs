@@ -41,7 +41,12 @@ namespace Project_Topic3.DataLayer
                 return taiKhoanDAO.get(TaiKhoanID);
             }
             set { }}
-        public virtual ICollection<TKB> TKBs { get; set; }
+        public virtual ICollection<TKB> TKBs { get{
+            TkbDAO tkbDAO = new TkbDAO();
+            return tkbDAO.getList(this);
+        }
+            set { }
+        }
         public virtual ICollection<TongKetHK> TongKetHKs { get; set; }
     }
 }

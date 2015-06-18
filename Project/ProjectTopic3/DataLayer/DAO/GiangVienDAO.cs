@@ -113,5 +113,11 @@ namespace Project_Topic3.DataLayer.DAO
             }
             return listDTO;
         }
+
+
+        public GiangVien convertDTOToEntity(GiangVienDTO t)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -87,6 +87,7 @@
             this.dgvListObjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListObjects.Size = new System.Drawing.Size(544, 295);
             this.dgvListObjects.TabIndex = 68;
+            this.dgvListObjects.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvListObjects_MouseClick);
             this.dgvListObjects.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvListObjects_MouseDoubleClick);
             // 
             // AccessObj

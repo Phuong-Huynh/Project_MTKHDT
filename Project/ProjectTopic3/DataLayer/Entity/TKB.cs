@@ -17,7 +17,7 @@ namespace Project_Topic3.DataLayer
     {
         public int Id { get; set; }
         public Nullable<int> Diem { get; set; }
-        public int HocSinhID { get; set; }
+        public int? HocSinhID { get; set; }
         public int CTHocKiID { get; set; }
 
         public virtual CTHocKi CTHocKi { get {
@@ -28,7 +28,7 @@ namespace Project_Topic3.DataLayer
         }
         public virtual HocSinh HocSinh { get {
             HocSinhDAO hocSinhDAO = new HocSinhDAO();
-            return hocSinhDAO.get(HocSinhID);
+            return hocSinhDAO.get(HocSinhID.Value);
         }
             set { }
         }

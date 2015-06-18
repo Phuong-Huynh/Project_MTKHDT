@@ -15,14 +15,14 @@ namespace Project_Topic3.FormFolder.TeacherForms
     {
         private GiangVien gv;
 
-        public TeacherEditInfo() 
+        public TeacherEditInfo()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         public TeacherEditInfo(GiangVien gv)
         {
-            InitializeComponent(); 
+            InitializeComponent();
             this.gv = gv;
         }
         protected override void Form_Load(object sender, EventArgs e)
@@ -33,6 +33,6 @@ namespace Project_Topic3.FormFolder.TeacherForms
             tbxAddress.Text = gv.DiaChi;
         }
 
-        
+
     }
 }

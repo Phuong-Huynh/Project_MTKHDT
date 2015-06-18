@@ -17,5 +17,7 @@ namespace Project_Topic3.FormFolder.AbstractForms
             InitializeComponent();
         }
         protected virtual void Form_Load(object sender, EventArgs e){}
+
+        protected virtual void btnSave_Click(object sender, EventArgs e){}
     }
 }

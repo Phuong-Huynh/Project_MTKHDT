@@ -110,5 +110,15 @@ namespace Project_Topic3.DataLayer.DAO
             }
             return listDTO;
         }
+
+
+        public HocSinh convertDTOToEntity(HocSinhDTO t)
+        {
+            HocSinh hocSinh = get(t.Id);
+            hocSinh.HoTen = t.HoTen;
+            hocSinh.NgaySinh = t.NgaySinh;
+            hocSinh.DiaChi = t.DiaChi;
+            return hocSinh;
+        }
     }
 }
