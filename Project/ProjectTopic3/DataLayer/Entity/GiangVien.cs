@@ -35,6 +35,12 @@ namespace Project_Topic3.DataLayer
             }
             set { }
         }
-        public virtual TaiKhoan TaiKhoan { get; set; }
+        public virtual TaiKhoan TaiKhoan {
+            get {
+                TaiKhoanDAO taiKhoanDAO = new TaiKhoanDAO();
+                return taiKhoanDAO.get(TaiKhoanID);
+            }
+            set { }
+        }
     }
 }

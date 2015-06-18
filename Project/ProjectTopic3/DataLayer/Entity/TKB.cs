@@ -9,6 +9,7 @@
 
 namespace Project_Topic3.DataLayer
 {
+    using Project_Topic3.DataLayer.DAO;
     using System;
     using System.Collections.Generic;
     
@@ -16,10 +17,20 @@ namespace Project_Topic3.DataLayer
     {
         public int Id { get; set; }
         public Nullable<int> Diem { get; set; }
-        public int? HocSinhID { get; set; }
+        public int HocSinhID { get; set; }
         public int CTHocKiID { get; set; }
-    
-        public virtual CTHocKi CTHocKi { get; set; }
-        public virtual HocSinh HocSinh { get; set; }
+
+        public virtual CTHocKi CTHocKi { get {
+            CTHocKiDAO cTHocKiDAO = new CTHocKiDAO();
+            return cTHocKiDAO.get(CTHocKiID);
+        }
+            set { }
+        }
+        public virtual HocSinh HocSinh { get {
+            HocSinhDAO hocSinhDAO = new HocSinhDAO();
+            return hocSinhDAO.get(HocSinhID);
+        }
+            set { }
+        }
     }
 }

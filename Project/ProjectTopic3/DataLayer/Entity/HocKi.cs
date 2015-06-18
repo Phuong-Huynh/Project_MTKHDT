@@ -24,7 +24,7 @@ namespace Project_Topic3.DataLayer
         public string TenHK { get; set; }
         public System.DateTime BatDau { get; set; }
         public System.DateTime KetThuc { get; set; }
-    
+
         public virtual ICollection<CTHocKi> CTHocKis { get; set; }
         public virtual ICollection<TongKetHK> TongKetHKs { get; set; }
     }

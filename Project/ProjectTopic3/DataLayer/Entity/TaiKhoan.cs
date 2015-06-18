@@ -9,6 +9,7 @@
 
 namespace Project_Topic3.DataLayer
 {
+    using Project_Topic3.DataLayer.DAO;
     using System;
     using System.Collections.Generic;
     
@@ -27,6 +28,12 @@ namespace Project_Topic3.DataLayer
     
         public virtual ICollection<GiangVien> GiangViens { get; set; }
         public virtual ICollection<HocSinh> HocSinhs { get; set; }
-        public virtual Role Role { get; set; }
+        public virtual Role Role { 
+            get {
+                RoleDAO roleDAO = new RoleDAO();
+                return roleDAO.get(RoleID);
+            }
+            set { }
+        }
     }
 }
