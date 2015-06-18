@@ -17,7 +17,7 @@ namespace Project_Topic3.FormFolder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudentForms.StudentMain(null));
+            Application.Run(new LoginForm());
             Database.SetInitializer<Project_Topic3.DataLayer.DAO.MyDbContext>(null);
         }
     }

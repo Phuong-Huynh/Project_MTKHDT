@@ -36,9 +36,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 261);
             this.Name = "TeacherEditInfo";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            //override
+            this.Text = "GIẢNG VIÊN";
+            this.lblTitle.Text = "THÔNG TIN GIẢNG VIÊN";
         }
 
         #endregion

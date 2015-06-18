@@ -30,6 +30,10 @@
         {
             this.SuspendLayout();
             // 
+            // btnDelete
+            // 
+            
+            // 
             // lbTitleLayout
             // 
             this.lbTitleLayout.Size = new System.Drawing.Size(209, 24);
