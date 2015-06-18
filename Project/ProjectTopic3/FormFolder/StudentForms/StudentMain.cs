@@ -1,4 +1,5 @@
-﻿using Project_Topic3.DataLayer;
+﻿//using Project_Topic3.DataLayer;
+using Project_Topic3.DataLayer.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,10 @@ namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentMain : AbstractForms.MainRule
     {
-        protected HocSinh student = new HocSinh();
+        protected HocSinhDTO student = new HocSinhDTO();
 
-        public StudentMain(HocSinh Stu) {
+        public StudentMain(HocSinhDTO Stu)
+        {
             //this.student = Stu;
             this.lblTitle.Text = "QUẢN LÝ HỌC SINH";
             InitializeComponent();
@@ -42,7 +44,7 @@ namespace Project_Topic3.FormFolder.StudentForms
 
         protected override void btnViewTimetable_Click(object sender, EventArgs e)
         {
-            AbstractForms.BaseForm formAcc = new StudentViewTimetable();
+            AbstractForms.BaseForm formAcc = new StudentViewTimetable(student);
             formAcc.ShowDialog();
         }
 

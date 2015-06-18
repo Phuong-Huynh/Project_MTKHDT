@@ -9,7 +9,7 @@ namespace Project_Topic3.DataLayer.DTO
     public class HocSinhDTO : PersonDTO
     {
         public string MSSV { get; set; }
-        public int TenLop { get; set; }
-        public int TenTaiKhoan { get; set; }
+        public string TenLop { get; set; }
+        public string TenTaiKhoan { get; set; }
     }
 }

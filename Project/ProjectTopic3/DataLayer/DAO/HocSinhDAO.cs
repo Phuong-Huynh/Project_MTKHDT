@@ -90,8 +90,8 @@ namespace Project_Topic3.DataLayer.DAO
                     HoTen = t.HoTen,
                     NgaySinh = t.NgaySinh,
                     DiaChi = t.DiaChi,
-                    IdLop = t.Lop.Id,
-                    IdTaiKhoan = t.TaiKhoan.Id,
+                    TenLop = t.Lop.TenLop,
+                    TenTaiKhoan = t.TaiKhoan.UserName,
                 };
                 return hsdto;
         }

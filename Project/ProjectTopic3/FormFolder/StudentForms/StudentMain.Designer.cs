@@ -73,7 +73,8 @@
             this.Controls.Add(this.lbMSSV);
             this.Controls.Add(this.label6);
             this.Name = "StudentMain";
-            this.Text = "QUẢN LÝ HỌC SINH";            
+            this.Text = "QUẢN LÝ HỌC SINH";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.Controls.SetChildIndex(this.lblTitle, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.label1, 0);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Topic3.DataLayer.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentViewTimetable : AbstractForms.ViewTimetable
     {
-        public StudentViewTimetable()
+        public StudentViewTimetable(HocSinhDTO Stu)
         {
             this.lblTitle.Text = "LỊCH HỌC";
             InitializeComponent(); 

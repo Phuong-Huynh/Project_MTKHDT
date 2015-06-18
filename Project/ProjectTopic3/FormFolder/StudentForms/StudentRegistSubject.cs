@@ -15,10 +15,10 @@ namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentRegistSubject : AbstractForms.BaseForm
     {
-        protected HocSinh hocsinh;
+        protected HocSinhDTO hocsinh;
         protected CTHocKiDAO ctHocKiDAO = new CTHocKiDAO();
 
-        public StudentRegistSubject(HocSinh Stu)
+        public StudentRegistSubject(HocSinhDTO Stu)
         {
             this.hocsinh = Stu;
             InitializeComponent();

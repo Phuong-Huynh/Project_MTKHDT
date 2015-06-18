@@ -24,8 +24,8 @@ namespace Project_Topic3.DataLayer
         public string PhongHoc { get; set; }
         public System.DateTime NgayHoc { get; set; }
         public string GioHoc { get; set; }
-        private int HocKiID { get; set; }
-        private int GiangVienID { get; set; }
+        public int HocKiID { get; set; }
+        public int GiangVienID { get; set; }
 
         public GiangVien GiangVien { 
             get{

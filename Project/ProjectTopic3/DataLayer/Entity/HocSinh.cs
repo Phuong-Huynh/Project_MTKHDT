@@ -26,8 +26,8 @@ namespace Project_Topic3.DataLayer
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }
         public string DiaChi { get; set; }
-        private int LopID { get; set; }
-        private int TaiKhoanID { get; set; }
+        public int LopID { get; set; }
+        public int TaiKhoanID { get; set; }
 
         public virtual Lop Lop { 
             get {
@@ -35,7 +35,12 @@ namespace Project_Topic3.DataLayer
                 return lopDAO.get(LopID);
             } 
             set { } }
-        public virtual TaiKhoan TaiKhoan { get; set; }
+        public virtual TaiKhoan TaiKhoan {
+            get {
+                TaiKhoanDAO taiKhoanDAO = new TaiKhoanDAO();
+                return taiKhoanDAO.get(TaiKhoanID);
+            }
+            set { }}
         public virtual ICollection<TKB> TKBs { get; set; }
         public virtual ICollection<TongKetHK> TongKetHKs { get; set; }
     }

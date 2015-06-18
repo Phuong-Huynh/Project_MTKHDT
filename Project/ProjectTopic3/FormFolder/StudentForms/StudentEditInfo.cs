@@ -1,4 +1,4 @@
-﻿using Project_Topic3.DataLayer;
+﻿using Project_Topic3.DataLayer.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +13,8 @@ namespace Project_Topic3.FormFolder.StudentForms
 {
     public partial class StudentEditInfo : AbstractForms.EditInfo
     {
-        protected HocSinh hocsinh;
-        public StudentEditInfo(HocSinh Stu)
+        protected HocSinhDTO hocsinh;
+        public StudentEditInfo(HocSinhDTO Stu)
         {
             this.hocsinh = Stu;
             InitializeComponent(); 
