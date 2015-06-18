@@ -37,20 +37,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dgvRegistedSubject = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Weekday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Room = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Option = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgvListSubjects = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Option = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistedSubject)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListSubjects)).BeginInit();
             this.SuspendLayout();
@@ -139,97 +129,21 @@
             // 
             this.dgvRegistedSubject.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRegistedSubject.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.Name,
-            this.Weekday,
-            this.Time,
-            this.Room,
             this.Option});
             this.dgvRegistedSubject.Location = new System.Drawing.Point(68, 140);
             this.dgvRegistedSubject.Name = "dgvRegistedSubject";
             this.dgvRegistedSubject.Size = new System.Drawing.Size(594, 119);
             this.dgvRegistedSubject.TabIndex = 39;
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "STT";
-            this.Id.Name = "Id";
-            this.Id.Width = 50;
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Tên môn học";
-            this.Name.Name = "Name";
-            // 
-            // Weekday
-            // 
-            this.Weekday.HeaderText = "Thứ";
-            this.Weekday.Name = "Weekday";
-            // 
-            // Time
-            // 
-            this.Time.HeaderText = "Thời gian học";
-            this.Time.Name = "Time";
-            // 
-            // Room
-            // 
-            this.Room.HeaderText = "Phòng";
-            this.Room.Name = "Room";
-            // 
-            // Option
-            // 
-            this.Option.HeaderText = "Chọn";
-            this.Option.Name = "Option";
-            this.Option.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Option.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // dgvListSubjects
             // 
             this.dgvListSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListSubjects.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
             this.dataGridViewCheckBoxColumn1});
             this.dgvListSubjects.Location = new System.Drawing.Point(68, 344);
             this.dgvListSubjects.Name = "dgvListSubjects";
             this.dgvListSubjects.Size = new System.Drawing.Size(594, 202);
             this.dgvListSubjects.TabIndex = 40;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tên môn học";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Thứ";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Thời gian học";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Phòng";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Chọn";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // btnCancel
             // 
@@ -240,6 +154,20 @@
             this.btnCancel.TabIndex = 41;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Chọn";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Option
+            // 
+            this.Option.HeaderText = "Chọn";
+            this.Option.Name = "Option";
+            this.Option.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Option.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // StudentRegistSubject
             // 
@@ -257,6 +185,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label4);
+            this.Name = "StudentRegistSubject";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistedSubject)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListSubjects)).EndInit();
             this.ResumeLayout(false);
@@ -275,19 +204,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dgvRegistedSubject;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Weekday;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Room;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Option;
         private System.Windows.Forms.DataGridView dgvListSubjects;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Option;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }

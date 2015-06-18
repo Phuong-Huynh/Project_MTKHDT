@@ -9,8 +9,10 @@ namespace Project_Topic3.DataLayer.DAO
 {
     public partial class MyDbContext : DbContext
     {
-
-        public MyDbContext() : base("name=MyStudent") { }
+        public MyDbContext(): base("name=MyStudent")
+        {
+            this.Configuration.LazyLoadingEnabled = false;
+        }
 
         public virtual DbSet<CTHocKi> CTHocKis { get; set; }
         public virtual DbSet<GiangVien> GiangViens { get; set; }
@@ -22,6 +24,11 @@ namespace Project_Topic3.DataLayer.DAO
         public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
         public virtual DbSet<TKB> TKBs { get; set; }
         public virtual DbSet<TongKetHK> TongKetHKs { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
     
 }

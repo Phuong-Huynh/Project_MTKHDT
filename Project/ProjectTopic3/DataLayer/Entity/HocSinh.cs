@@ -9,6 +9,7 @@
 
 namespace Project_Topic3.DataLayer
 {
+    using Project_Topic3.DataLayer.DAO;
     using System;
     using System.Collections.Generic;
     
@@ -25,8 +26,15 @@ namespace Project_Topic3.DataLayer
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }
         public string DiaChi { get; set; }
-    
-        public virtual Lop Lop { get; set; }
+        private int LopID { get; set; }
+        private int TaiKhoanID { get; set; }
+
+        public virtual Lop Lop { 
+            get {
+                LopDAO lopDAO = new LopDAO();
+                return lopDAO.get(LopID);
+            } 
+            set { } }
         public virtual TaiKhoan TaiKhoan { get; set; }
         public virtual ICollection<TKB> TKBs { get; set; }
         public virtual ICollection<TongKetHK> TongKetHKs { get; set; }

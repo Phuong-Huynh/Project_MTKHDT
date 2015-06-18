@@ -16,6 +16,8 @@ namespace Project_Topic3.DataLayer
     {
         public int Id { get; set; }
         public Nullable<int> DiemTB { get; set; }
+        public int HocKiID { get; set; }
+        public int HocSinhID { get; set; }
     
         public virtual HocKi HocKi { get; set; }
         public virtual HocSinh HocSinh { get; set; }

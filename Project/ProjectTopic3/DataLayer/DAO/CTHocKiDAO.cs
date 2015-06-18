@@ -106,17 +106,20 @@ namespace Project_Topic3.DataLayer.DAO
 
         public CTHocKiDTO convert(CTHocKi t)
         {
-            CTHocKiDTO gvdto = new CTHocKiDTO
-            {
-                Id = t.Id,
-                PhongHoc = t.PhongHoc,
-                NgayHoc = t.NgayHoc,
-                GioHoc = t.GioHoc,
-                //TenHocKi = t.HocKi.TenHK,
-                TenMonHoc = t.MonHoc.TenMonHoc,
-                TenGiangVien = t.GiangVien.HoTen,
-            };
-            return gvdto;
+            //using (MyDbContext db = new MyDbContext())
+            //{
+                CTHocKiDTO gvdto = new CTHocKiDTO
+                {
+                    Id = t.Id,
+                    PhongHoc = t.PhongHoc,
+                    NgayHoc = t.NgayHoc,
+                    GioHoc = t.GioHoc,
+                    TenGiangVien = t.GiangVien.HoTen,
+                    TenMonHoc = t.GiangVien.MonHoc.TenMonHoc,
+                };
+                return gvdto;
+           // }
+            
         }
 
         public List<CTHocKiDTO> getListDTO(List<CTHocKi> t)

@@ -9,6 +9,7 @@
 
 namespace Project_Topic3.DataLayer
 {
+    using Project_Topic3.DataLayer.DAO;
     using System;
     using System.Collections.Generic;
     
@@ -23,9 +24,17 @@ namespace Project_Topic3.DataLayer
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }
         public string DiaChi { get; set; }
+        public int MonHocID { get; set; }
+        public int TaiKhoanID { get; set; }
     
         public virtual ICollection<CTHocKi> CTHocKis { get; set; }
-        public virtual MonHoc MonHoc { get; set; }
+        public virtual MonHoc MonHoc { 
+            get {
+                MonHocDAO monHocDAO = new MonHocDAO();
+                return monHocDAO.get(MonHocID);
+            }
+            set { }
+        }
         public virtual TaiKhoan TaiKhoan { get; set; }
     }
 }
