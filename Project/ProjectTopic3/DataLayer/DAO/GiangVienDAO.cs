@@ -81,6 +81,7 @@ namespace Project_Topic3.DataLayer.DAO
         {
             using (MyDbContext db = new MyDbContext())
             {
+                
                 return db.GiangViens.ToList<GiangVien>();
             }
         }

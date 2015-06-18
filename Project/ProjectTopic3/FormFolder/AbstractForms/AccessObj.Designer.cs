@@ -33,10 +33,6 @@
             this.lbTitleLayout = new System.Windows.Forms.Label();
             this.lbTittleDataGridview = new System.Windows.Forms.Label();
             this.dgvListObjects = new System.Windows.Forms.DataGridView();
-            this.IdObj = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameObj = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BirthdayObj = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AddressObj = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListObjects)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,36 +81,13 @@
             // dgvListObjects
             // 
             this.dgvListObjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListObjects.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdObj,
-            this.NameObj,
-            this.BirthdayObj,
-            this.AddressObj});
             this.dgvListObjects.Location = new System.Drawing.Point(90, 93);
             this.dgvListObjects.Name = "dgvListObjects";
+            this.dgvListObjects.ReadOnly = true;
+            this.dgvListObjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListObjects.Size = new System.Drawing.Size(544, 295);
             this.dgvListObjects.TabIndex = 68;
-            // 
-            // IdObj
-            // 
-            this.IdObj.HeaderText = "STT";
-            this.IdObj.Name = "IdObj";
-            this.IdObj.Width = 50;
-            // 
-            // NameObj
-            // 
-            this.NameObj.HeaderText = "Họ tên";
-            this.NameObj.Name = "NameObj";
-            // 
-            // BirthdayObj
-            // 
-            this.BirthdayObj.HeaderText = "Ngày sinh";
-            this.BirthdayObj.Name = "BirthdayObj";
-            // 
-            // AddressObj
-            // 
-            this.AddressObj.HeaderText = "Địa chỉ";
-            this.AddressObj.Name = "AddressObj";
+            this.dgvListObjects.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvListObjects_MouseDoubleClick);
             // 
             // AccessObj
             // 
@@ -140,10 +113,6 @@
         protected System.Windows.Forms.Label lbTitleLayout;
         protected System.Windows.Forms.Label lbTittleDataGridview;
         protected System.Windows.Forms.DataGridView dgvListObjects;
-        protected System.Windows.Forms.DataGridViewTextBoxColumn IdObj;
-        protected System.Windows.Forms.DataGridViewTextBoxColumn NameObj;
-        protected System.Windows.Forms.DataGridViewTextBoxColumn BirthdayObj;
-        protected System.Windows.Forms.DataGridViewTextBoxColumn AddressObj;
-
+        //
     }
 }

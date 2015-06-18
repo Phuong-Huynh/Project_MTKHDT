@@ -1,6 +1,8 @@
 ﻿using Project_Topic3.DataLayer;
 using Project_Topic3.DataLayer.DAO;
 using Project_Topic3.DataLayer.DTO;
+using Project_Topic3.FormFolder.AbstractForms;
+using Project_Topic3.FormFolder.TeacherForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +27,12 @@ namespace Project_Topic3.FormFolder.AdminForms
             gvDao = new GiangVienDAO();
             
         }
+        protected GiangVien getCurrentRow()
+        {
+            int id = Int32.Parse(dgvListObjects.CurrentRow.Cells["Id"].Value.ToString()); 
+            return gvDao.get(id);
+            
+        }
         protected override void Form_Load(object sender, EventArgs e)
         {
             base.Form_Load(sender, e);
@@ -35,11 +43,21 @@ namespace Project_Topic3.FormFolder.AdminForms
         protected override void btnAdd_Click(object sender, EventArgs e)
         {
             base.btnAdd_Click(sender, e);
+            
         }
 
         protected override void btnDelete_Click(object sender, EventArgs e)
         {
             base.btnDelete_Click(sender, e);
         }
+
+        protected override void dgvListObjects_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            base.dgvListObjects_MouseDoubleClick(sender, e);
+            gv = this.getCurrentRow();
+            BaseForm f = new TeacherEditInfo(gv);
+            f.ShowDialog();
+        }
+        
     }
 }
